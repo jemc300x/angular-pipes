@@ -31,4 +31,5 @@ export class AppComponent {
   public fecha = new Date();
   public idioma: string = 'en';
   public videoUrl: string = 'https://www.youtube.com/embed/kPLP4OV-c5E';
+  public showHide: boolean = true;
 }

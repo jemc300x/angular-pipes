@@ -105,6 +105,20 @@
             </td>
             <td>{{ fecha | date:'medium':'':idioma}}</td>
           </tr>
+          <tr>
+            <td>{{ nombre }}</td>
+            <td>
+              contraseña:active
+            <br>
+            <button 
+              class="btn btn-outline-primary"
+              (click)="showHide = !showHide"
+            >
+              Show/Hide
+            </button>
+            </td>
+            <td>{{ nombre | showpass:showHide}}</td>
+          </tr>
         </tbody>
       </table>
 
